@@ -1,16 +1,26 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
     bottom: 0;
+    overflow-x: hidden;
 }
+
 header {
     background: #011b36;
     color: white;
     padding: 20px;
 }
+
 .btn {
     display: inline-block;
     background: #28a745;
@@ -20,65 +30,76 @@ header {
     border-radius: 5px;
     margin-top: 10px;
 }
+
 .btn:hover {
     background: #218838;
 }
-.sobre, .beneficios{
+
+.sobre, .beneficios {
     padding: 20px;
-    background: white;
-    margin: 20px auto;
-    width: 80%;
+    background: rgba(255, 255, 255, 0.301);
+    margin: 10px;
+    width: 800px;
+    max-width: 1000px;
     height: 300px;
-    max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 #compra {
     padding: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.301);
     margin: 20px auto;
-    width: 80%;
+    width: 800px;
     height: 100px;
-    max-width: 600px;
+    max-width: 1000px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 footer {
-    background: #333;
+    background: #011b33;
     color: white;
-    padding: 10px;
-    margin-top: 20px;
-    position: fixed;
+    padding: 30px;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
 
-.books{
+.books {
     width: 250px;
     height: auto;
     margin: 10px auto;
     padding: 10px;
     border: 3px solid black;
+    border-radius: 5px;
 }
 
-.lista{
-    background-color: white;
-    border-radius: 10px;
+.lista {
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
     margin: 20px auto;
-    max-width: 1220px;
+    width: 800px;
+    max-width: 1000px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Ajusta a distância entre os elementos */
-    flex-wrap: wrap; /* Evita que quebrem no mobile */
-    align-items: center; /* Centraliza verticalmente */
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
 }
 
-.sobre, .beneficios {
-    width: 30%; /* Ajusta para ocupar melhor o espaço */
-    max-width: none; /* Remove o limite de 600px */
-    margin: 0; /* Remove margem extra */
+.bkg {
+    background-image: url('bkg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; /* ou 'auto' se quiser manter o tamanho original */
+    background-attachment: fixed; /* ISSO é o que fixa a imagem no fundo */
+    min-height: 100vh;
+    width: 100%;
+    font-size: larger;
 }
